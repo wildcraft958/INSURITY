@@ -1,0 +1,30 @@
+# Render Service Configuration for FastAPI Backend
+# Deploy this service on Render.com
+
+services:
+  - type: web
+    name: telematics-insurance-backend
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
+      - key: AIVEN_POSTGRES_URI
+        sync: false  # Set this in Render dashboard
+      - key: SECRET_KEY
+        generateValue: true
+      - key: API_KEY
+        generateValue: true
+    autoDeploy: true
+    
+    # Health check
+    healthCheckPath: /health
+    
+    # Environment specific settings
+    disk:
+      name: telematics-data
+      mountPath: /data
+      sizeGB: 1

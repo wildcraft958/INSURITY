@@ -1,0 +1,24 @@
+# Render Service Configuration for Streamlit Dashboard
+# Deploy this service on Render.com
+
+services:
+  - type: web
+    name: telematics-insurance-dashboard
+    env: python
+    region: oregon
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
+      - key: BACKEND_API_URL
+        value: https://telematics-insurance-backend.onrender.com  # Update with actual backend URL
+    autoDeploy: true
+    
+    # Health check (Streamlit doesn't have built-in health endpoint)
+    # Will use default Render health check
+    
+    # Custom domain (optional)
+    # domains:
+    #   - telematics-dashboard.yourdomain.com
