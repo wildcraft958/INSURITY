@@ -1,4 +1,4 @@
-# Backend requirements for telematics insurance platform
+# Backend requirements for enhanced telematics insurance platform
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.5.0
@@ -17,3 +17,44 @@ aiofiles==23.2.1
 email-validator==2.1.0
 passlib[bcrypt]==1.7.4
 python-jose[cryptography]==3.3.0
+
+# Enhanced dependencies for comprehensive analysis
+scipy==1.11.4           # For advanced statistical analysis and signal processing
+tensorflow==2.15.0      # For deep learning models in behavior analysis
+keras==2.15.0          # High-level neural networks API
+matplotlib==3.8.2      # For data visualization in analysis
+seaborn==0.13.0        # Statistical data visualization
+plotly==5.17.0         # Interactive plotting for dashboards
+folium==0.15.1         # Geographic visualization
+geopy==2.4.1           # Geocoding and geographic calculations
+shapely==2.0.2         # Geometric objects and spatial operations
+geopandas==0.14.1      # Geographic data analysis
+pytz==2023.3           # Timezone handling for temporal analysis
+requests==2.31.0       # HTTP requests for external APIs
+beautifulsoup4==4.12.2 # Web scraping if needed for data enrichment
+lxml==4.9.3            # XML/HTML processing
+redis==5.0.1           # Caching for performance optimization
+celery==5.3.4          # Background task processing
+flower==2.0.1          # Celery monitoring
+prometheus-client==0.19.0  # Metrics collection
+structlog==23.2.0      # Structured logging
+rich==13.7.0           # Enhanced console output
+click==8.1.7           # Command line interface
+typer==0.9.0           # Modern CLI framework
+pydantic-settings==2.1.0  # Settings management
+alembic==1.13.1        # Database migrations
+python-dateutil==2.8.2    # Date/time utilities
+pyarrow==14.0.2        # Efficient data interchange
+openpyxl==3.1.2        # Excel file processing
+xlsxwriter==3.1.9      # Excel file writing
+
+# Development and testing dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0         # Code formatting
+isort==5.12.0          # Import sorting
+flake8==6.1.0          # Code linting
+mypy==1.7.1           # Type checking
+pre-commit==3.6.0     # Git hooks
+bandit==1.7.5         # Security linting

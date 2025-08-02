@@ -1,6 +1,5 @@
 """
 Data preparation utilities for shared data cleaning and imputation
-Based on telematics-driving-data.pdf specifications
 """
 import pandas as pd
 import numpy as np
