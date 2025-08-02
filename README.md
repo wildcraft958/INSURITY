@@ -84,6 +84,48 @@ INSURITY is an advanced insurance technology platform leveraging AI and machine 
 
 Full docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
+## Dashboard Demo
+
+The INSURITY platform features a comprehensive interactive dashboard built with Streamlit. Below are screenshots showcasing the key features:
+
+### Main Dashboard Views
+
+![Dashboard Overview](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-10.png)
+*Main dashboard overview with driver metrics and risk assessment*
+
+![Risk Assessment](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-17.png)
+*Detailed risk assessment visualization*
+
+![Geographic Analysis](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-30.png)
+*Geographic risk mapping and spatial analysis*
+
+![Behavior Analysis](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-35.png)
+*Driving behavior analysis and scoring*
+
+![Contextual Insights](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-45.png)
+*Contextual risk factors and environmental analysis*
+
+![Claims Prediction](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-39-49.png)
+*Claims frequency and severity predictions*
+
+![Gamification Features](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-40-04.png)
+*Gamification dashboard with points, badges, and leaderboards*
+
+![Performance Metrics](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-40-42.png)
+*Driver performance trends and analytics*
+
+![Route Analysis](Dashboard%20demo/Screenshot%20from%202025-08-02%2009-40-46.png)
+*Route-based risk analysis and recommendations*
+
+### Key Dashboard Features
+
+- **Real-time Risk Scoring:** Live updates of driver risk assessment
+- **Interactive Maps:** Geographic risk visualization with clustering
+- **Trend Analysis:** Historical performance and risk evolution
+- **Gamification Integration:** Points, badges, and competitive elements
+- **Claims Analytics:** Predictive insights for frequency and severity
+- **Multi-Expert Insights:** Combined analysis from all AI models
+
 ## Contributing
 
 - Fork, branch, commit, and open a PR
